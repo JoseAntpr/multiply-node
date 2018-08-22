@@ -26,7 +26,7 @@ switch( comando ) {
             .catch( err => console.log(err));
         break;
     default:
-        console.log('Comando no reconocido: Only listar o crear');
+        console.log('Comando no reconocido: usa listar o crear');
 
 }
 
