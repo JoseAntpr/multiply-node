@@ -1,6 +1,8 @@
 const multiplicar = require('./multiplicar/multiplicar');
 
-let base = 3;
+let argv = process.argv;
+let param = argv[2];
+let base = param.split('=')[1];
 
 multiplicar.crearArchivo( base )
     .then( resp => console.log(resp))
