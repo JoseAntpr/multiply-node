@@ -1,8 +1,11 @@
 const fs = require('fs');
-
+const colors =  require('colors');
 data = '';
 
 let listarTabla = (base, limite) => {
+    console.log("=================".green)
+    console.log(`Tabla de ${base}`.red)
+    console.log("=================".green)
     for ( let i = 1; i <= limite; i++ ) {
         console.log(`${ base } * ${ i} = ${ base * i}`);
     }
